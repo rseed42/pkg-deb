@@ -1,0 +1,13 @@
+Source: vextris
+Section: games
+Priority: extra
+Maintainer: rseed42 <petkov.venelin@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: https://github.com/rseed42/vextris
+
+Package: vextris
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Hextris clone
+ Hexagonal fun

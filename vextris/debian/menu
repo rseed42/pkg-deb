@@ -1,0 +1,2 @@
+?package(vextris):needs="X11||wm" section="Games"\
+  title="VexTris" command="/usr/games/vextris"
