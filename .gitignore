@@ -1,0 +1,18 @@
+# Ignore everything
+/*
+
+# Ignore generated files in the debian subdir
+*.debhelper
+*.substvars
+files
+debian/files
+
+# Unignore some special files
+!.gitignore
+
+# Unignore debian subdirs for projects. This is not
+# very elegant, but it seems git works that way.
+!/vextris/
+/vextris/*
+!/vextris/debian
+/vextris/debian/vextris
