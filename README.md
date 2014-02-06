@@ -7,9 +7,10 @@ Debian packages for projects.
 
 1. Make sure that the source is ready for shipping (git tag it).
 
-2. Make a compressed file with the following naming convention:
+2. Make a compressed file with the following naming convention (The name of
+the directory doesn't matter):
 
->project_name-0.x.orig.tar.gz
+>project_name_0.x.orig.tar.gz
 
 3. Move the compressed file to the root of pkg-deb.
 
@@ -17,11 +18,9 @@ Debian packages for projects.
 the ones in the compressed file (i.e. if you make a change in the source, you
 have to start again).
 
-5. Create a symbolic link pkg-deb/project_name/ -> pkg-deb/project_name-0.x
+5. Update debian/changelog (version 0.x must match the compressed file version).
 
-6. Change the version number in debian/changelog to 0.x, add info if necessary.
-
-7. Build the package
+6. Build the package
 
    a) If not signing it:
 
