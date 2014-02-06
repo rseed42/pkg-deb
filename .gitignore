@@ -8,7 +8,8 @@ files
 debian/files
 
 # Unignore some special files
-!.gitignore
+!/.gitignore
+!/README.md
 
 # Unignore debian subdirs for projects. This is not
 # very elegant, but it seems git works that way.
