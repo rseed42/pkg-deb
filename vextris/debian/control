@@ -2,12 +2,16 @@ Source: vextris
 Section: games
 Priority: extra
 Maintainer: rseed42 <petkov.venelin@gmail.com>
-Build-Depends: debhelper (>= 8.0.0)
+Build-Depends: debhelper (>= 8.0.0),
+               qt4-qmake (>=4.8.2),
+               libqt4-opengl-dev (>=4.8.2)
 Standards-Version: 3.9.3
 Homepage: https://github.com/rseed42/vextris
 
 Package: vextris
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libqt4-opengl (>=4.8.2)
 Description: Hextris clone
  Hexagonal fun
